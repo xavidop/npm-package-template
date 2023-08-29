@@ -11,7 +11,7 @@
     "lint:fix": "standard --fix | snazzy",
     "lint:test": "npm run lint && npm test",
     "test": "mocha \"tests/**/*.tests.js\"",
-    "test:coverage": "NODE_ENV=test c8 --all --include=lib/* --reporter=html --reporter=text mocha \"tests/**/*.tests.js\"",
+    "test:coverage": "NODE_ENV=test c8 --all --include=lib/* --reporter=html --reporter=text --reporter=lcov mocha \"tests/**/*.tests.js\"",
     "test:watch": "npm test -- --watch",
     "docs": "jsdoc --readme README.md ./lib/*.js -d ./docs && jsdoc2md ./lib/*.js > ./api.md",
     "build": "rollup --config rollup.dist.config.js",
