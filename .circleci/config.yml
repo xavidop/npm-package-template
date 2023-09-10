@@ -45,8 +45,17 @@ jobs:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
       - run:
+          name: Pack package
+          command: npm pack
+      - run:
           name: Publish package
           command: npm publish --dry run
+      - store_artifacts:
+          path: ~/repo
+          destination: dist
+      - store_artifacts:
+          path: ~/repo/docs
+          destination: docs
             
 workflows:
   test-deploy:

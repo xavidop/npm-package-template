@@ -15,6 +15,7 @@
     "test:coverage": "NODE_ENV=test c8 --all --include=lib/* --reporter=html --reporter=text --reporter=lcov mocha \"tests/**/*.tests.js\"",
     "test:watch": "npm test -- --watch",
     "docs": "jsdoc --readme README.md ./lib/*.js -d ./docs && jsdoc2md ./lib/*.js > ./api.md",
+    "prepack": "npm run build:full",
     "build": "rollup --config rollup.dist.config.js",
     "build:full": "npm run docs && npm run build"
   },
