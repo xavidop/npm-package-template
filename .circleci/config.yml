@@ -52,10 +52,12 @@ workflows:
   test-deploy:
     jobs:
       - test:
+          context: dev
           filters:
             tags:
               only: /^v.*/
       - deploy:
+          context: dev
           requires:
             - test
           filters:
