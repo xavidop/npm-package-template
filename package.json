@@ -8,6 +8,7 @@
   "exports": "./dist/index.js",
   "scripts": {
     "lint": "standard | snazzy",
+    "lint:report": " standard | standard-reporter --json > lint.json",
     "lint:fix": "standard --fix | snazzy",
     "lint:test": "npm run lint && npm test",
     "test": "mocha \"tests/**/*.tests.js\"",
@@ -42,7 +43,7 @@
   },
   "targets": "> 0.25%, not dead",
   "repository": {
-    "type": "git",
+    "type": "git"
   },
   "keywords": [
     "npm",
@@ -77,6 +78,7 @@
     "mocha": "^10.2.0",
     "rollup": "^3.28.0",
     "snazzy": "^9.0.0",
-    "standard": "^17.1.0"
+    "standard": "^17.1.0",
+    "standard-reporter": "^1.0.5"
   }
 }
