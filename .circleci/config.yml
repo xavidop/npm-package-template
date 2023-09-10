@@ -51,7 +51,7 @@ jobs:
           name: Publish package
           command: npm publish --dry run
       - store_artifacts:
-          path: ~/repo
+          path: ~/repo/dist
           destination: dist
       - store_artifacts:
           path: ~/repo/docs
