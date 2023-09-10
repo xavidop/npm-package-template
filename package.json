@@ -43,7 +43,6 @@
   "targets": "> 0.25%, not dead",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/jankapunkt/npm-package-template.git"
   },
   "keywords": [
     "npm",
@@ -51,15 +50,7 @@
     "template",
     "javascript"
   ],
-  "author": "Jan Küster <info@jankuester.com>",
-  "funding": {
-    "type": "PayPal",
-    "url": "https://paypal.me/kuesterjan"
-  },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jankapunkt/npm-package-template/issues"
-  },
   "engines": {
     "node": ">= 14.x"
   },
@@ -70,7 +61,7 @@
     "LICENSE",
     "CHANGELOG.md"
   ],
-  "homepage": "https://github.com/jankapunkt/npm-package-template#readme",
+  "homepage": "https://github.com/",
   "devDependencies": {
     "@babel/cli": "^7.22.10",
     "@babel/core": "^7.22.10",
