@@ -112,3 +112,5 @@ lint.json
 .idea
 .vscode
 .atom
+
+test-results.xml
