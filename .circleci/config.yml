@@ -53,7 +53,7 @@ jobs:
           command: npm publish --dry run
       - store_artifacts:
           path: ~/repo/my-awesome-package-1.1.0.tgz
-          destination: package
+          destination: package/release.tgz
       - store_artifacts:
           path: ~/repo/dist
           destination: dist
